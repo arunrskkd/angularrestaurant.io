@@ -1,0 +1,21 @@
+
+        <div class="card " *ngIf="recepie ;else sect">
+                <img class="card-img-top" [src]="recepie.imgurl" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">{{recepie.name}}</h5>
+                  <p class="card-text">{{recepie.description}}</p>
+               
+                </div>
+              </div>
+              <ng-template #sect>
+<h5><i>No recepie selected</i></h5>
+
+              </ng-template>
+
+
+
+
+
+
+
+

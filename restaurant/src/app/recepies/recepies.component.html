@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <div class="row">
+      <div class="col-sm-6">
+          <app-recepielist (recepieselect)="recepieseleted = $event"></app-recepielist>
+          </div>
+      <div class="col-sm-6" >
+          <app-recepiedetail [recepie]="recepieseleted"></app-recepiedetail>
+        </div>
+        
+  </div>
+
+
+
+
+
+</div>
